@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.bg-gradient {
+  @apply bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 min-h-screen flex items-center justify-center p-4 text-white;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
